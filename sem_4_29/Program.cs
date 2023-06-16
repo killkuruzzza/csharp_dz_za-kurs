@@ -1,17 +1,23 @@
 ﻿// Задать массив из 8 элементов и вывести их на экран
-Console.WriteLine("введите элементы массива");
+
 
 //int num = int.Parse(Console.ReadLine());
 
-int[] array = new int[8];
-int len = array.Length;
-int index = 0;
-while (index < len)
+//Каждый элемент на новой строке
+int[] ReadElArray(int size)
 {
-    array[index] = int.Parse(Console.ReadLine()); ;
-    index++;
+    Console.WriteLine("введите элементы массива");
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++){
+        array[i] = int.Parse(Console.ReadLine()); ;
+    }
 }
-for (int i = 0; i < len; i++)
-{
-    Console.Write(array[i]);
+
+
+void PrintArray(int[] array){
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}");
+    }
+    Console.WriteLine();
 }

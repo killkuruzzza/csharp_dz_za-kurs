@@ -85,19 +85,19 @@ bool LiveOrDie(string[,] array, int i, int j)
     int count = 0;
     //Count считает живых соседей
     //Перебор всех 8 соседей клетки
-    count += array[i, j - 1] == "*" ? 1 : 0;
-    count += array[i - 1, j - 1] == "*" ? 1 : 0;
-    count += array[i - 1, j] == "*" ? 1 : 0;
-    count += array[i - 1, j + 1] == "*" ? 1 : 0;
-    count += array[i + 1, j - 1] == "*" ? 1 : 0;
-    count += array[i + 1, j] == "*" ? 1 : 0;
-    count += array[i + 1, j + 1] == "*" ? 1 : 0;
-    count += array[i, j + 1] == "*" ? 1 : 0;
+    count += array[i, j - 1] == "+" ? 1 : 0;
+    count += array[i - 1, j - 1] == "+" ? 1 : 0;
+    count += array[i - 1, j] == "+" ? 1 : 0;
+    count += array[i - 1, j + 1] == "+" ? 1 : 0;
+    count += array[i + 1, j - 1] == "+" ? 1 : 0;
+    count += array[i + 1, j] == "+" ? 1 : 0;
+    count += array[i + 1, j + 1] == "+" ? 1 : 0;
+    count += array[i, j + 1] == "+" ? 1 : 0;
     //По условию если 3 живых клетки либо оживляют мертвую клетку, либо ничего не меняется
     if (count == 3)
         return true;
     //Если у живой клетки 2 соседки, то она будет дальше жить
-    if (count == 2 && array[i, j] == "*")
+    if (count == 2 && array[i, j] == "+")
         return true;
     //В любых других случаях клетка умирает
     return false;
@@ -163,15 +163,14 @@ void SimNStep(string[,] array, int n)
             {
                 //Если метод LiveOrDie Вернул true клетка жива("*")
                 //Если false то мертва(".")
-                array[j, k] = LiveOrDie(array2, j + 1, k + 1) ? "*" : ".";
+                array[j, k] = LiveOrDie(array2, j + 1, k + 1) ? "+" : ".";
             }
         }
 
     }
 }
 
-int a = int.Parse(Console.ReadLine()), b =
-    int.Parse(Console.ReadLine()), c = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine()), b =int.Parse(Console.ReadLine()), c = int.Parse(Console.ReadLine());
 string[,] test = InputСonfiguration(a, b, c);
 Console.WriteLine("-------------------------");
 PrintArray(test);

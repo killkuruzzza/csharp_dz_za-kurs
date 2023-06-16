@@ -1,0 +1,15 @@
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\bin\Debug\net6.0\sem_8_62.exe
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\bin\Debug\net6.0\sem_8_62.deps.json
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\bin\Debug\net6.0\sem_8_62.runtimeconfig.json
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\bin\Debug\net6.0\sem_8_62.dll
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\bin\Debug\net6.0\sem_8_62.pdb
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.csproj.AssemblyReference.cache
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.AssemblyInfoInputs.cache
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.AssemblyInfo.cs
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.csproj.CoreCompileInputs.cache
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.dll
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\refint\sem_8_62.dll
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.pdb
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\sem_8_62.genruntimeconfig.cache
+C:\Users\Professional\Desktop\работа\gb\с#\dz_zakurs\sem_8_62\obj\Debug\net6.0\ref\sem_8_62.dll

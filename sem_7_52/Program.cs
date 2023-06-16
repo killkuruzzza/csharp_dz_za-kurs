@@ -42,14 +42,13 @@ void PrintArray(int[,] inArray)
 double[] GetResultArray(int[,] array)
 {
     double[] result = new double[array.GetLength(1)];
-    for (int i = 0; i < array.GetLength(1); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        double sum = 0;
-        for (int j = 0; j < array.GetLength(0); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            sum += array[j, i];
+            result[j] += array[i, j] / array.GetLength(0);
         }
-        result[i] = Math.Round(sum / array.GetLength(0), 2);
+//        result[i] = Math.Round(sum / array.GetLength(0), 2);
     }
     return result;
 }

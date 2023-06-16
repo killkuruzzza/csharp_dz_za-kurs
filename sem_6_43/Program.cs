@@ -8,7 +8,7 @@
 2. Ответ: 
         x=(b2-b1)/(k1-k2) , y=k1(b2-b1)/(k1-k2)+b1      */
 
-Console.Clear();
+
 
 Console.Write("Введите b1: ");
 double b1 = int.Parse(Console.ReadLine());
@@ -22,4 +22,12 @@ double k2 = int.Parse(Console.ReadLine());
 double x = (b2 - b1) / (k1 - k2);
 double y = k1 * (b2 - b1) / (k1 - k2) + b1;
 
-Console.WriteLine($"Точка пересечения двух прямых X = {x:0.000} , Y = {y:0.000}\n");
+double[] GetPoint(double inb1, double ink1, double inb2, double ink2){
+    double[] result = new double[2];
+    result[0] = (inb2 - inb1) / (ink1 - ink2);
+    result[1] = ink1 * (inb2 - inb1) / (ink1 - ink2) + inb1;
+    return result;
+}
+
+Console.WriteLine($"Точка пересечения двух прямых X = {x:0.00} , Y = {y:0.000}");
+Console.WriteLine(String.Join(", ", GetPoint(b1, k1, b2, k2)));
